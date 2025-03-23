@@ -1,0 +1,52 @@
+{% extends "base.html" %} 
+{%load static%}
+
+{%block title%}
+  My Blog
+{% endblock %}
+
+{%block css_files%}
+  <link rel="stylesheet" href="{%static 'blog/post.css'%}">
+  <link rel="stylesheet" href="{%static 'blog/index.css'%}">
+  
+{%endblock%}
+
+{% block  content%}
+ 
+
+  <section id="welcome">
+    <header>
+        <img src="{%static "blog/images/men.webp"%}" alt="KD - The author of this Blog">
+        <h2> KDICTOR'S BLOG</h2>
+    </header>
+    <p>
+      HI.I am KD and I love to blog about tech and the world!
+    </p>
+  </section>
+
+
+  <section id="latest-posts">
+    <h2>
+      My Latest Posts
+    </h2>
+
+    <ul>
+      {%for post in posts%}
+       {%include "blog/includes/post.html"%}
+      {% endfor %}
+    </ul>
+  </section>
+
+
+  <section id="about">
+    <h2>What I Do</h2>
+    <p>
+      I love programming, I love to code full stack web apps.
+    </p>
+    <p>
+      My goal is to keep on growing as a full stack developer-Also im in a current mood to become more backend developer!!
+    </p>
+  </section> 
+
+  
+{% endblock  %}

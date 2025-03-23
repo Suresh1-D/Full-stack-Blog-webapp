@@ -1,0 +1,115 @@
+#welcome {
+  background: linear-gradient(to right top, var(--primary-color), var(--secondary-color));
+  padding: 6rem 10%;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+#welcome header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+}
+
+#welcome img {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  border: 5px solid var(--white);
+  border-radius: 50%;
+  background-color: #ffe1bf;
+  transform: rotateZ(-5deg);
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: transform 0.3s ease-in-out;
+}
+
+#welcome img:hover {
+  transform: rotateZ(0deg) scale(1.05);
+}
+
+#welcome h2 {
+  font-size: 3.5rem;
+  color: var(--light-color);
+  width: auto;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px var(--shadow);
+}
+
+#welcome p {
+  color: var(--white);
+  font-size: 1.5rem;
+  max-width: 50rem;
+  margin: auto;
+  line-height: 1.6;
+}
+
+#latest-posts {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 70%;
+  margin: -4rem auto 2rem auto;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+#latest-posts:hover {
+  transform: scale(1.02);
+}
+
+#latest-posts h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--dark-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#latest-posts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#latest-posts li {
+  flex: 1;
+  min-width: 15rem;
+  padding: 1rem;
+  background: #f7f7f7;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+#latest-posts li:hover {
+  background: #eaeaea;
+}
+
+#about {
+  text-align: center;
+  padding: 4rem;
+  background-color: var(--accent-color);
+  margin-top: 5rem;
+  border-radius: 20px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#about h2 {
+  font-size: 3rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#about p {
+  font-size: 1.5rem;
+  color: var(--dark-color);
+  max-width: 60rem;
+  margin: auto;
+  line-height: 1.6;
+}

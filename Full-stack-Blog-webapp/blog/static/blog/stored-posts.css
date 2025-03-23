@@ -1,0 +1,33 @@
+#stored-posts {
+  margin: 8rem auto 3rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow:  var(--shadow);
+  background-color: white;
+  width: 90%;
+  max-width: 30rem;
+}
+
+#stored-posts ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#stored-posts li{ 
+  margin: 1rem 0;
+}
+
+#stored-posts a {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  text-decoration: none;
+  border: 1px solid #666;
+  color: rgb(34, 31, 31);
+  font-weight: bold;
+}
+
+#stored-posts a:hover,
+#stored-posts a:active{
+  background-color:  #777;
+}
